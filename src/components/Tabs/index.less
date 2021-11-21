@@ -1,0 +1,24 @@
+@themeColor:#d44439;
+@selectedBorderColor:#f1f1f1;
+
+
+.tab{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: @themeColor;
+    li{
+        padding:10px;
+        a{
+            color:#e4e4e4;
+            &.select{
+               span{
+                   padding:2px 0;
+                   color:@selectedBorderColor;
+                   border-bottom: 3px solid @selectedBorderColor;
+               }
+            }
+        }
+    }
+}
